@@ -1,4 +1,4 @@
-# Sustainability Core Ontology
+# COSY-SCO Alignment
 
 ## Description
 
@@ -14,7 +14,7 @@ This is the main repository for the alignment between COSY and related upper-lev
 
 ### SCO - Useful Links
 
-- [COSY Repository](https://github.com/rfcalhau/cosy).
+- [COSY Ontology Repository](https://github.com/rfcalhau/cosy).
 - [COSY Ontology](https://raw.githubusercontent.com/rfcalhau/cosy/refs/heads/main/cosy_ontology.ttl).
 - [SCO Repository](https://w3id.org/sco/repo).
 - [SCO-B](https://w3id.org/sco/sco-b).
