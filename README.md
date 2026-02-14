@@ -1,24 +1,36 @@
-# COSY-SCO Alignment
+# SCO-COSy Alignment
 
 ## Description
 
-This repository hosts the alignment between the [COSY Ontology](https://github.com/rfcalhau/cosy) and the [Sustainability Core Ontology (SCO)](https://w3id.org/sc/repo).
+### The Sustainabiity Core ontology (SCO)
 
-COSY Ontology is a domain ontology modelling system complexity and complex systems. SCO is a middle-level core ontology, establishing an ontological hub upon which to harmonize and integrate top-level and domain ontologies regarding sustainability.
+ SCO is a middle-level core ontology, establishing an ontological hub upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The current version of SCO, SCO V1.1.0, is comprised of two segments: SCO-B and SCO-U. SCO-B aligns the SCO vocabulary with [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html), specifically[ gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/).
+ 
+ 
+### The Core Ontology of Systems (COSy)
+COSY Ontology is a domain ontology modelling system complexity and complex systems.
+COSy aign UFO as upper-level ontology.
 
+### SCO to COSy Mapping
+This repository mantains the alignment between the SCO-U to COSy (SCOSy), aiming to establish a common and solid backbone reference for modelling complexity, especially with regard to sustainability.
 
 ## Material
 
-This is the main repository for the alignment between COSY and related upper-level ontologies and SCO. COSY-SCO materials can be found here: coming soon.
+This is the main repository for the alignment SCO-COSy (SCOSy) and related materials. SCOSy is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and rendered [Terse RDF Triple Language (Turtle) Syntax](https://www.w3.org/TR/turtle/). It covers English as natural languages. The m
 
 
-### SCO - Useful Links
+- SCO to COSy mapping in OWL.
+- SCO to COSy mapping in xlsx.
+- SCOSy development protocol.
+- Materials for mplementation. 
 
-- [COSY Ontology Repository](https://github.com/rfcalhau/cosy).
-- [COSY Ontology](https://raw.githubusercontent.com/rfcalhau/cosy/refs/heads/main/cosy_ontology.ttl).
-- [SCO Repository](https://w3id.org/sco/repo).
-- [SCO-B](https://w3id.org/sco/sco-b).
-- [SCO-U](https://w3id.org/sco/sco-u).
+### SCO and COSy - Useful Links
+
+- SCOSy:https://w3id.org/scosy/scosy-mapping.
+- SCO Repository:https://w3id.org/sco/repo.
+- SCO-U:https://w3id.org/sco/sco-u.
+- COSY Ontology Repository:https://github.com/rfcalhau/cosy.
+- COSY Ontology:https://raw.githubusercontent.com/rfcalhau/cosy/refs/heads/main/cosy_ontology.ttl.
 
 
 ##  SCO Developer   
@@ -48,7 +60,7 @@ Giorgio A. Ubbiali - Giorgio.Ubbiali@pthsta.it
 
 - Calhau, R., Sales, T. P., Almeida, J. P. A., & Guizzardi, G. (2023). *Exploring system behavior in a system ontology*. Int Conf Concept Model.
 
-- Ubbiali, G. A., Borghini, A., & Lange, M. C. (2024). *Ontologies for Sustainability: Theoretical Challenges*. https://doi.org/10.31219/osf.io/z8uqr 
+- Ubbiali, G. A., Lange, M. C., & Borghini, A. (2026). Ontologies for Sustainability: Theoretical Challenges. Sustainable Development, sd.70562. https://doi.org/10.1002/sd.70562; preprint available at https://doi:10.31219/osf.io/z8uqr
 
 - Ubbiali, G. A. (2025). *Designing Foundational Strategies for Developing a Family of Food Systems Sustainability Ontologies*. PhD Thesis, UNIMI. https://air.unimi.it/handle/2434/1161515
 
