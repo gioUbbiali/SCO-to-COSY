@@ -16,7 +16,7 @@ This repository mantains the alignment between the SCO-U to COSy (SCOSy), aiming
 
 ## Material
 
-This is the main repository for the alignment SCO-COSy (SCOSy) and related materials. SCOSy is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and rendered [Terse RDF Triple Language (Turtle) Syntax](https://www.w3.org/TR/turtle/). It covers English as natural languages. The m
+This is the main repository for the alignment SCO-COSy (SCOSy) and related materials. SCOSy is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and rendered [Terse RDF Triple Language (Turtle) Syntax](https://www.w3.org/TR/turtle/). It covers English as natural languages. The relevant materials can be found here:
 
 
 - SCO to COSy mapping in OWL.
