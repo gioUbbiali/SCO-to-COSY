@@ -78,4 +78,77 @@ Documentation webpage: https://www.w3id.org/scosy/docs"""@en ,
 <https://www.w3id.org/sco/sco-u#SCO_0000060> rdfs:subClassOf <http://purl.com/cosy#SystemSituation> .
 
 
+###  https://www.w3id.org/scosy#SCOSy_0000001
+:SCOSy_0000001 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000063>
+                                                          [ rdf:type owl:Class ;
+                                                            owl:complementOf [ rdf:type owl:Restriction ;
+                                                                               owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                                               owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000027>
+                                                                             ]
+                                                          ]
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                            owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000029>
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000063> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000002
+:SCOSy_0000002 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000064>
+                                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                                                   owl:someValuesFrom [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000013>
+                                                                                                                             [ rdf:type owl:Class ;
+                                                                                                                               owl:complementOf <https://www.w3id.org/sco/sco-u#SCO_0000014>
+                                                                                                                             ]
+                                                                                                                           ) ;
+                                                                                                        rdf:type owl:Class
+                                                                                                      ]
+                                                                                 ]
+                                                                                 [ rdf:type owl:Restriction ;
+                                                                                   owl:onProperty <http://purl.org/nemo/gufo#manifestedIn> ;
+                                                                                   owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000001>
+                                                                                 ]
+                                                                               ) ;
+                                                            rdf:type owl:Class
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000064> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.w3id.org/scosy#SCOSy_0000001
+:SCOSy_0000001 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000002
+:SCOSy_0000002 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:SCOSy_0000001 rdfs:label "disposition to act of a system component"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A disposition to act that inheres in some system component." ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000002 rdfs:label "disposition of a system component to participate in an interaction"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A disposition to participate in an interaction that inheres in some system component."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
