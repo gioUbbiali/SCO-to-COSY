@@ -1,26 +1,26 @@
-@prefix : <https://www.w3id.org/scosy/scosy-mapping#> .
+@prefix : <https://www.w3id.org/scosy#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://www.w3id.org/scosy/scosy-mapping#> .
+@base <https://www.w3id.org/scosy#> .
 
-<https://www.w3id.org/scosy/scosy-mapping> rdf:type owl:Ontology ;
-                                            owl:versionIRI <http://www.semanticweb.org/f.u./ontologies/2026/1/untitled-ontology-207/V1.0.0> ;
-                                            owl:imports <http://purl.com/cosy> ,
-                                                        <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
-                                            <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
-                                                                                   "Rodrigo F. Calhau" ;
-                                            <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
-                                            <http://purl.org/dc/terms/title> "SCO to COSy mapping (SCOSy)"@en ;
-                                            rdfs:seeAlso """Sustainability Core Ontology (SCO) Repository:https://w3id.org/sco/repo.
+<https://www.w3id.org/scosy> rdf:type owl:Ontology ;
+                              owl:versionIRI :V1.0.0 ;
+                              owl:imports <http://purl.com/cosy> ,
+                                          <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
+                              <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
+                                                                     "Rodrigo F. Calhau" ;
+                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                              <http://purl.org/dc/terms/title> "SCO to COSy mapping (SCOSy)"@en ;
+                              rdfs:seeAlso """Sustainability Core Ontology (SCO) Repository:https://w3id.org/sco/repo.
 Core Ontology of Systems (COSy) Repository:https://github.com/rfcalhau/cosy."""@en ;
-                                            owl:versionInfo "2026-02-14" ,
-                                                            "V1.0.0." ;
-                                            <http://www.w3.org/2004/02/skos/core#note> """Repository: https://github.com/scosy/repo
+                              owl:versionInfo "2026-02-14" ,
+                                              "V1.0.0." ;
+                              <http://www.w3.org/2004/02/skos/core#note> """Repository: https://github.com/scosy/repo
 Documentation webpage: https://www.w3id.org/scosy/docs"""@en ,
-                                                                                       "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/scosy/scosy-mapping"@en .
+                                                                         "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/scosy/scosy-mapping"@en .
 
 #################################################################
 #    Classes
