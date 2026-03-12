@@ -127,6 +127,36 @@ Documentation webpage: https://www.w3id.org/scosy/docs"""@en ,
 #    Individuals
 #################################################################
 
+###  http://purl.com/cosy#ExternalComponentInteraction
+<http://purl.com/cosy#ExternalComponentInteraction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000009> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000009
+
+###  http://purl.com/cosy#InternalComponentInteraction
+<http://purl.com/cosy#InternalComponentInteraction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000008> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000008
+
+###  http://purl.com/cosy#SystemBehavior
+<http://purl.com/cosy#SystemBehavior> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000011> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000011
+
+###  http://purl.com/cosy#SystemComposition
+<http://purl.com/cosy#SystemComposition> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000046> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000046
+
+###  http://purl.org/disc-o#Interaction
+<http://purl.org/disc-o#Interaction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000001> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000001
+
 ###  https://www.w3id.org/scosy#SCOSy_0000001
 :SCOSy_0000001 rdf:type owl:NamedIndividual ,
                         <http://purl.org/nemo/gufo#SubKind> .
