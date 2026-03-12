@@ -26,36 +26,36 @@ Documentation webpage: https://www.w3id.org/scosy/docs"""@en ,
 #    Classes
 #################################################################
 
-###  http://purl.com/cosy#Component
-<http://purl.com/cosy#Component> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000013> .
-
-
-###  http://purl.com/cosy#ExternalComponentInteraction
-<http://purl.com/cosy#ExternalComponentInteraction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000009> .
-
-
-###  http://purl.com/cosy#ExternalEntity
-<http://purl.com/cosy#ExternalEntity> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000014> .
-
-
-###  http://purl.com/cosy#InternalComponentInteraction
-<http://purl.com/cosy#InternalComponentInteraction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000007> .
-
-
 ###  http://purl.com/cosy#System
 <http://purl.com/cosy#System> rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000068> .
 
 
-###  http://purl.com/cosy#SystemBehavior
-<http://purl.com/cosy#SystemBehavior> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000011> .
-
-
-###  http://purl.com/cosy#SystemComposition
-<http://purl.com/cosy#SystemComposition> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000046> .
-
-
 ###  http://purl.org/disc-o#Interaction
 <http://purl.org/disc-o#Interaction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000001> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000007
+<https://www.w3id.org/sco/sco-u#SCO_0000007> owl:equivalentClass <http://purl.com/cosy#InternalComponentInteraction> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000009
+<https://www.w3id.org/sco/sco-u#SCO_0000009>  owl:equivalentClass <http://purl.com/cosy#ExternalComponentInteraction> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000011
+<https://www.w3id.org/sco/sco-u#SCO_0000011> owl:equivalentClass <http://purl.com/cosy#SystemBehavior>  .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000013
+<https://www.w3id.org/sco/sco-u#SCO_0000013> owl:equivalentClass <http://purl.com/cosy#Component> .
+
+
+###  ttps://www.w3id.org/sco/sco-u#SCO_0000014
+<https://www.w3id.org/sco/sco-u#SCO_0000014> owl:equivalentClass <http://purl.com/cosy#ExternalEntity> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000046
+<https://www.w3id.org/sco/sco-u#SCO_0000046> owl:equivalentClass <http://purl.com/cosy#SystemComposition>  .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000048
@@ -127,35 +127,25 @@ Documentation webpage: https://www.w3id.org/scosy/docs"""@en ,
 #    Individuals
 #################################################################
 
-###  http://purl.com/cosy#ExternalComponentInteraction
-<http://purl.com/cosy#ExternalComponentInteraction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000009> .
-
-
-###  https://www.w3id.org/sco/sco-u#SCO_0000009
-
-###  http://purl.com/cosy#InternalComponentInteraction
-<http://purl.com/cosy#InternalComponentInteraction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000008> .
+###  https://www.w3id.org/sco/sco-u#SCO_0000001
+<https://www.w3id.org/sco/sco-u#SCO_0000001> owl:sameAs <http://purl.org/disc-o#Interaction> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000008
+<https://www.w3id.org/sco/sco-u#SCO_0000008> owl:sameAs <http://purl.com/cosy#InternalComponentInteraction> .
 
-###  http://purl.com/cosy#SystemBehavior
-<http://purl.com/cosy#SystemBehavior> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000011> .
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000009
+<https://www.w3id.org/sco/sco-u#SCO_0000009> owl:sameAs <http://purl.com/cosy#ExternalComponentInteraction> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000011
-
-###  http://purl.com/cosy#SystemComposition
-<http://purl.com/cosy#SystemComposition> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000046> .
+<https://www.w3id.org/sco/sco-u#SCO_0000011> owl:sameAs <http://purl.com/cosy#SystemBehavior> .
 
 
 ###  https://www.w3id.org/sco/sco-u#SCO_0000046
+<https://www.w3id.org/sco/sco-u#SCO_0000046> owl:sameAs <http://purl.com/cosy#SystemComposition> .
 
-###  http://purl.org/disc-o#Interaction
-<http://purl.org/disc-o#Interaction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000001> .
-
-
-###  https://www.w3id.org/sco/sco-u#SCO_0000001
 
 ###  https://www.w3id.org/scosy#SCOSy_0000001
 :SCOSy_0000001 rdf:type owl:NamedIndividual ,
