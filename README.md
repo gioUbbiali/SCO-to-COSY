@@ -9,7 +9,7 @@
  
 ### The Core Ontology of Systems (COSy)
 COSY Ontology is a domain ontology modelling system complexity and complex systems.
-COSy aign UFO as upper-level ontology.
+COSy reuses UFO as upper-level ontology.
 
 ### SCO to COSy Mapping
 This repository mantains the alignment between the SCO-U to COSy (SCOSy), aiming to establish a common and solid backbone reference for modelling complexity, especially with regard to sustainability.
