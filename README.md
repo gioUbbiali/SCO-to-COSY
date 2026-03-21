@@ -4,14 +4,15 @@
 
 ### The Sustainabiity Core ontology (SCO)
 
-SCO is a middle-level core ontology, establishing an ontological hub upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The current version of SCO, SCO V1.1.0, is comprised of two segments: SCO-B and SCO-U. SCO-B aligns the SCO vocabulary with [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html), specifically[ gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/).
+[SCO](https://w3id.org/sco/repo) is a middle-level core ontology, establishing an ontological hub upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The current version of SCO, SCO V1.1.0, is comprised of two segments: SCO-B and SCO-U. SCO-B aligns the SCO vocabulary with [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html), specifically[ gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/).
  
  
 ### The Core Ontology of Systems (COSy)
-COSY Ontology is a domain ontology modelling system complexity and complex systems.
-COSy reuses UFO as upper-level ontology.
+[COSY](https://github.com/Cosy-Ontology/ontology) is a core ontology modelling systems, system complexity, and related features, such as composition and emergence. COSy reuses UFO as the upper-level ontology and extends the [Capabilities Ontology (Creon)](https://github.com/rfcalhau/creon). which in turn extends the [dispositions ontology (Disc-O)](https://github.com/rfcalhau/disco). Both ontologies use UFO as the upper-level ontology as well.
 
-### SCO to COSy Mapping
+
+
+### SCO to COSy Alignment
 This repository mantains the alignment between the SCO-U to COSy (SCOSy), aiming to establish a common and solid backbone reference for modelling complexity, especially with regard to sustainability.
 
 ## Material
