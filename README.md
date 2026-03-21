@@ -29,7 +29,7 @@ This is the main repository for the alignment SCO-COSy (SCOSy) and related mater
 - SCO Repository:https://w3id.org/sco/repo.
 - SCO-U:https://w3id.org/sco/sco-u.
 - COSY Ontology Repository:https://github.com/rfcalhau/cosy.
-- COSY Ontology:https://raw.githubusercontent.com/rfcalhau/cosy/refs/heads/main/cosy_ontology.ttl.
+- COSY Ontology: https://raw.githubusercontent.com/Cosy-Ontology/ontology/refs/heads/main/cosy_ontology.ttl.
 
 
 ##  SCO Developer   
