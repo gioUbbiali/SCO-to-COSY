@@ -25,7 +25,7 @@ This is the main repository for the alignment SCO-COSy (SCOSy) and related mater
 
 ### SCO and COSy - Useful Links
 
-- SCOSy:https://w3id.org/scosy/scosy-mapping.
+- SCOSy:https://w3id.org/scosy.
 - SCO Repository:https://w3id.org/sco/repo.
 - SCO-U:https://w3id.org/sco/sco-u.
 - COSY Ontology Repository:https://github.com/rfcalhau/cosy.
