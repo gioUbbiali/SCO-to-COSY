@@ -1,4 +1,4 @@
-# SCO-COSy Alignment
+# SCOSy: SCO-COSy Alignment
 
 ## Description
 
