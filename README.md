@@ -2,7 +2,7 @@
 
 ## Description
 
-### The Sustainabiity Core ontology (SCO)
+### The Sustainabiity Core Ontology (SCO)
 
 [SCO](https://w3id.org/sco/repo) is a middle-level core ontology, establishing an ontological hub upon which to harmonize and integrate top-level and domain ontologies regarding sustainability. The current version of SCO, SCO V1.1.0, is comprised of two segments: SCO-B and SCO-U. SCO-B aligns the SCO vocabulary with [Basic Formal Ontology (BFO)](https://github.com/BFO-ontology/BFO-2020). SCO-U aligns the SCO vocabulary with [Unified Foundational Ontology (UFO)](https://ontouml.readthedocs.io/en/latest/intro/ufo.html), specifically[ gUFO (UFO implementation in OWL)](https://nemo-ufes.github.io/gufo/).
  
