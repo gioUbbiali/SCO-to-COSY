@@ -1,0 +1,307 @@
+@prefix : <https://www.w3id.org/scosy#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.w3id.org/scosy#> .
+
+<https://www.w3id.org/scosy> rdf:type owl:Ontology ;
+                              owl:versionIRI :V1.0.0 ;
+                              owl:imports <http://purl.com/cosy> ,
+                                          <https://www.w3id.org/sco/sco-u#v1.1.0/sco-u> ;
+                              <http://purl.org/dc/terms/contributor> "Giorgio A. Ubbiali" ,
+                                                                     "Rodrigo F. Calhau" ;
+                              <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
+                              <http://purl.org/dc/terms/title> "SCO to COSy alignment (SCOSy)"@en ;
+                              rdfs:comment "Alignment justifications are findable in the dedicated spreadsheet in the SCOSy repo."@en ;
+                              rdfs:seeAlso """Sustainability Core Ontology (SCO) Repository:https://w3id.org/sco/repo.
+Core Ontology of Systems (COSy) Repository:https://github.com/Cosy-Ontology."""@en ;
+                              owl:versionInfo "2026-03-25" ,
+                                              "V1.0.0." ;
+                              <http://www.w3.org/2004/02/skos/core#note> "Repository: https://github.com/scosy/repo"@en ,
+                                                                         "The most recent version of this file is available on GitHub at the following link: https://www.w3id.org/scosy"@en .
+
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://purl.com/cosy#ExternalComponentInteraction
+<http://purl.com/cosy#ExternalComponentInteraction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000009> .
+
+
+###  http://purl.com/cosy#ExternalEntity
+<http://purl.com/cosy#ExternalEntity> rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000014> .
+
+
+###  http://purl.com/cosy#InternalComponentInteraction
+<http://purl.com/cosy#InternalComponentInteraction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000007> .
+
+
+###  http://purl.com/cosy#SystemBehavior
+<http://purl.com/cosy#SystemBehavior> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000011> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000001
+<https://www.w3id.org/sco/sco-u#SCO_0000001> rdfs:subClassOf <http://purl.org/disc-o#Interaction> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000016
+<https://www.w3id.org/sco/sco-u#SCO_0000016> rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000041
+<https://www.w3id.org/sco/sco-u#SCO_0000041> rdfs:subClassOf <http://purl.com/cosy#SystemAspect> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000046
+<https://www.w3id.org/sco/sco-u#SCO_0000046> rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                               owl:onProperty <http://purl.org/nemo/gufo#isSituationProperPartOf> ;
+                                                               owl:someValuesFrom <http://purl.com/cosy#SystemComposition>
+                                                             ] .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000058
+<https://www.w3id.org/sco/sco-u#SCO_0000058> rdfs:subClassOf <http://purl.com/cosy#SystemSituation> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000001
+:SCOSy_0000001 rdf:type owl:Class ;
+               rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000068> ,
+                               [ owl:intersectionOf ( <http://purl.com/cosy#System>
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty [ owl:inverseOf <https://www.w3id.org/sco/sco-u#SCO_0000057>
+                                                                       ] ;
+                                                        owl:someValuesFrom :SCOSy_0000003
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000002
+:SCOSy_0000002 rdf:type owl:Class ;
+               rdfs:subClassOf :SCOSy_0000001 ,
+                               [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000015>
+                                                      [ rdf:type owl:Restriction ;
+                                                        owl:onProperty [ owl:inverseOf <https://www.w3id.org/sco/sco-u#SCO_0000057>
+                                                                       ] ;
+                                                        owl:someValuesFrom :SCOSy_0000004
+                                                      ]
+                                                    ) ;
+                                 rdf:type owl:Class
+                               ] .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000003
+:SCOSy_0000003 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000013>
+                                                          [ rdf:type owl:Class ;
+                                                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://purl.org/nemo/gufo#standsInQualifiedParthood> ;
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000046>
+                                                                                                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://purl.org/nemo/gufo#concernsTemporaryWhole> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass :SCOSy_0000001
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsInQualifiedParthood>
+                                                                                                                                                              ] ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass :SCOSy_0000003
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ]
+                                                                                                                    ) ;
+                                                                                                 rdf:type owl:Class
+                                                                                               ]
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://www.w3id.org/sco/sco-u#SCO_0000057> ;
+                                                                            owl:someValuesFrom :SCOSy_0000001
+                                                                          ]
+                                                                        )
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf <http://purl.com/cosy#Component> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000004
+:SCOSy_0000004 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000028>
+                                                          [ rdf:type owl:Class ;
+                                                            owl:unionOf ( [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <http://purl.org/nemo/gufo#standsInQualifiedParthood> ;
+                                                                            owl:someValuesFrom [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000047>
+                                                                                                                      [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty <http://purl.org/nemo/gufo#concernsTemporaryWhole> ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass :SCOSy_0000002
+                                                                                                                                             ]
+                                                                                                                                             [ rdf:type owl:Restriction ;
+                                                                                                                                               owl:onProperty [ owl:inverseOf <http://purl.org/nemo/gufo#standsInQualifiedParthood>
+                                                                                                                                                              ] ;
+                                                                                                                                               owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                                                                               owl:onClass :SCOSy_0000004
+                                                                                                                                             ]
+                                                                                                                                           ) ;
+                                                                                                                        rdf:type owl:Class
+                                                                                                                      ]
+                                                                                                                    ) ;
+                                                                                                 rdf:type owl:Class
+                                                                                               ]
+                                                                          ]
+                                                                          [ rdf:type owl:Restriction ;
+                                                                            owl:onProperty <https://www.w3id.org/sco/sco-u#SCO_0000057> ;
+                                                                            owl:someValuesFrom :SCOSy_0000001
+                                                                          ]
+                                                                        )
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :SCOSy_0000003 .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000005
+:SCOSy_0000005 rdf:type owl:Class ;
+               rdfs:subClassOf <http://purl.com/cosy#ExternalEntity> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000006
+:SCOSy_0000006 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000063>
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                            owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000029>
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :SCOSy_0000007 .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000007
+:SCOSy_0000007 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000064>
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                            owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000013>
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> ,
+                               <https://www.w3id.org/sco/sco-u#SCO_0000064> .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.com/cosy#ExternalComponentInteraction
+<http://purl.com/cosy#ExternalComponentInteraction> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000009> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000009
+
+###  http://purl.com/cosy#InternalComponentEvent
+<http://purl.com/cosy#InternalComponentEvent> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000008> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000008
+
+###  http://purl.com/cosy#SystemBehavior
+<http://purl.com/cosy#SystemBehavior> owl:sameAs <https://www.w3id.org/sco/sco-u#SCO_0000011> .
+
+
+###  https://www.w3id.org/sco/sco-u#SCO_0000011
+
+###  https://www.w3id.org/scosy#SCOSy_0000001
+:SCOSy_0000001 rdf:type owl:NamedIndividual ,
+                        <http://purl.com/cosy#SystemType> ,
+                        <http://purl.org/nemo/gufo#Role> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000002
+:SCOSy_0000002 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#Role> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000003
+:SCOSy_0000003 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#Category> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000004
+:SCOSy_0000004 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#Category> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000005
+:SCOSy_0000005 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#RoleMixin> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000006
+:SCOSy_0000006 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000007
+:SCOSy_0000007 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .
+
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+#################################################################
+#    Annotations
+#################################################################
+
+:SCOSy_0000001 rdfs:label "functional system"@en ;
+                <http://www.w3.org/2004/02/skos/core#definition> "A system whose components play different functional roles with respect to the whole system."@en ;
+                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000002 rdfs:label "functional complex system"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A complex system whose components play different functional roles with respect to the whole complex system."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000003 rdfs:label "functional system component"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A system component that is part of a functional system."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000004 rdfs:label "functional complex system component"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A complex system component that is part of a functional complex system."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000005 rdfs:comment "The meaning of the relation between the external entitles and the system should be further discussed. This may be model as participation of interactions between complex system components and components of the related environment."@en ;
+               rdfs:label "complex system environment component - system related"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A complex system environment component that is related to the corresponding complex system."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Provisional> .
+
+
+:SCOSy_0000006 rdfs:label "disposition to act of a system component"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A disposition to act that inheres in some system component." ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000007 rdfs:label "disposition of a system component to participate in an interaction"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A disposition to participate in an interaction that inheres in some system component."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
