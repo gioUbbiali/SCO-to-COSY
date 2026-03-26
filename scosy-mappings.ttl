@@ -410,6 +410,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                         <http://purl.org/nemo/gufo#SubKind> .
 
 
+###  https://www.w3id.org/scosy#SCOSy_0000008
+:SCOSy_0000008 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .                      
+
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 

@@ -211,10 +211,7 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                                                         ) ;
                                      rdf:type owl:Class
                                    ] ;
-               rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> ;
-               rdfs:label "complex system component perspective"@en ;
-               <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a complex system component."@en ;
-               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+               rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> .
 
 
 #################################################################
@@ -278,6 +275,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
                         <http://purl.org/nemo/gufo#SubKind> .
 
 
+###  https://www.w3id.org/scosy#SCOSy_0000008
+:SCOSy_0000008 rdf:type owl:NamedIndividual ,
+                        <http://purl.org/nemo/gufo#SubKind> .
+
+
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
@@ -321,6 +323,11 @@ owl:qualifiedCardinality rdf:type owl:AnnotationProperty .
 
 :SCOSy_0000007 rdfs:label "disposition of a system component to participate in an interaction"@en ;
                <http://www.w3.org/2004/02/skos/core#definition> "A disposition to participate in an interaction that inheres in some system component."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
+
+
+:SCOSy_0000008 rdfs:label "complex system component perspective"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a complex system component."@en ;
                <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
