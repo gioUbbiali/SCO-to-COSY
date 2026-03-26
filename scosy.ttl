@@ -46,10 +46,6 @@ Core Ontology of Systems (COSy) Repository:https://github.com/Cosy-Ontology."""@
 <https://www.w3id.org/sco/sco-u#SCO_0000001> rdfs:subClassOf <http://purl.org/disc-o#Interaction> .
 
 
-###  https://www.w3id.org/sco/sco-u#SCO_0000016
-<https://www.w3id.org/sco/sco-u#SCO_0000016> rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> .
-
-
 ###  https://www.w3id.org/sco/sco-u#SCO_0000041
 <https://www.w3id.org/sco/sco-u#SCO_0000041> rdfs:subClassOf <http://purl.com/cosy#SystemAspect> .
 
@@ -157,6 +153,22 @@ Core Ontology of Systems (COSy) Repository:https://github.com/Cosy-Ontology."""@
                                    ] ;
                rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> ,
                                <https://www.w3id.org/sco/sco-u#SCO_0000064> .
+
+
+###  https://www.w3id.org/scosy#SCOSy_0000008
+:SCOSy_0000008 rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000016>
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
+                                                            owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000028>
+                                                          ]
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> ;
+               rdfs:label "complex system component perspective"@en ;
+               <http://www.w3.org/2004/02/skos/core#definition> "A perspective that is bearered by a complex system component."@en ;
+               <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/maturity> <https://spec.industrialontologies.org/ontology/core/meta/AnnotationVocabulary/Released> .
 
 
 #################################################################
