@@ -20,12 +20,15 @@ This repository mantains the alignment between the SCO-U to COSy (SCOSy), aiming
 This is the main repository for the alignment SCO-COSy (SCOSy) and related materials. SCOSy is formalized in [Web Ontology Language (OWL)](https://www.w3.org/TR/owl2-overview/) and rendered [Terse RDF Triple Language (Turtle) Syntax](https://www.w3.org/TR/turtle/). It covers English as natural languages. The relevant materials can be found here:
 
 
-- SCO to COSy mapping in OWL.
-- SCO to COSy mapping in xlsx (coming soon).
+- [SCOSyin OW](https://w3id.org/scosy)L.
+- [SCO to COSy mappings in OWL](https://w3id.org/scosy/scosy-mappings).
+- [SCO to COSy mappings in xlsx format](https://github.com/gioUbbiali/SCO-to-COSY/blob/main/SCOSy%20Alignment.xlsx).
+- [SCO to COSy mappings csv formats](https://raw.githubusercontent.com/gioUbbiali/SCO-to-COSY/refs/heads/main/SCOSy%20Alignment.csv?token=GHSAT0AAAAAADEK7TWKELRUKQMYLKX6TUWI2OFJZXQ).
 
 ### SCO and COSy - Useful Links
 
 - SCOSy:https://w3id.org/scosy.
+- SCOSy mappings (no SCO and COSy imported):https://w3id.org/scosy/scosy-mappings.
 - SCO Repository:https://w3id.org/sco/repo.
 - SCO-U:https://w3id.org/sco/sco-u.
 - COSY Ontology Repository:https://github.com/rfcalhau/cosy.
