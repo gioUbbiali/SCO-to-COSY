@@ -26,43 +26,12 @@ Core Ontology of Systems (COSy) Repository:https://github.com/Cosy-Ontology."""@
 #    Classes
 #################################################################
 
-###  http://purl.com/cosy#ExternalComponentInteraction
-<http://purl.com/cosy#ExternalComponentInteraction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000009> .
-
-
 ###  http://purl.com/cosy#ExternalEntity
 <http://purl.com/cosy#ExternalEntity> rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000014> .
 
 
-###  http://purl.com/cosy#InternalComponentInteraction
-<http://purl.com/cosy#InternalComponentInteraction> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000007> .
-
-
-###  http://purl.com/cosy#SystemBehavior
-<http://purl.com/cosy#SystemBehavior> owl:equivalentClass <https://www.w3id.org/sco/sco-u#SCO_0000011> .
-
-
-###  https://www.w3id.org/sco/sco-u#SCO_0000001
-<https://www.w3id.org/sco/sco-u#SCO_0000001> rdfs:subClassOf <http://purl.org/disc-o#Interaction> .
-
-
-###  https://www.w3id.org/sco/sco-u#SCO_0000016
-<https://www.w3id.org/sco/sco-u#SCO_0000016> rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> .
-
-
 ###  https://www.w3id.org/sco/sco-u#SCO_0000041
 <https://www.w3id.org/sco/sco-u#SCO_0000041> rdfs:subClassOf <http://purl.com/cosy#SystemAspect> .
-
-
-###  https://www.w3id.org/sco/sco-u#SCO_0000046
-<https://www.w3id.org/sco/sco-u#SCO_0000046> rdfs:subClassOf [ rdf:type owl:Restriction ;
-                                                               owl:onProperty <http://purl.org/nemo/gufo#isSituationProperPartOf> ;
-                                                               owl:someValuesFrom <http://purl.com/cosy#SystemComposition>
-                                                             ] .
-
-
-###  https://www.w3id.org/sco/sco-u#SCO_0000058
-<https://www.w3id.org/sco/sco-u#SCO_0000058> rdfs:subClassOf <http://purl.com/cosy#SystemSituation> .
 
 
 ###  https://www.w3id.org/scosy#SCOSy_0000001
@@ -134,29 +103,12 @@ Core Ontology of Systems (COSy) Repository:https://github.com/Cosy-Ontology."""@
 
 ###  https://www.w3id.org/scosy#SCOSy_0000006
 :SCOSy_0000006 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000063>
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
-                                                            owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000029>
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
                rdfs:subClassOf :SCOSy_0000007 .
 
 
 ###  https://www.w3id.org/scosy#SCOSy_0000007
 :SCOSy_0000007 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( <https://www.w3id.org/sco/sco-u#SCO_0000064>
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty <http://purl.org/nemo/gufo#inheresIn> ;
-                                                            owl:someValuesFrom <https://www.w3id.org/sco/sco-u#SCO_0000013>
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf <http://purl.com/cosy#ComponentDisposition> ,
-                               <https://www.w3id.org/sco/sco-u#SCO_0000064> .
+               rdfs:subClassOf <https://www.w3id.org/sco/sco-u#SCO_0000064> .
 
 
 #################################################################
